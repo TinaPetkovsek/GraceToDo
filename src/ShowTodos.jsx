@@ -8,5 +8,11 @@
 export function ShowTodos(props) {
   const { todos } = props;
 
-  return <div>To je ShowTodos.jsx</div>;
+  return (
+    <div>
+      {todos.map((todo) => (
+        <Todo></Todo>
+      ))}
+    </div>
+  );
 }
